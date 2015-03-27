@@ -2,8 +2,6 @@
 
 
 (function (window) {
-
-
     //添加事件的方法通用所有
     function addevent(evetname, fn, obj) {
         if (document.attachEvent) {  //ie9一下
