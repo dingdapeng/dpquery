@@ -324,7 +324,8 @@
         else
             return null;
     }
- 
+// 静态方法扩展
+  DpQuery.extend=function(obj){
   	
   	 for(var i in obj){
   	     
