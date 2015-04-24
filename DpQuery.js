@@ -80,14 +80,25 @@
                     break;
             }
 
-            //return this.elements;
+           
         } else if (type == 'object') {
             this.elements.push(context);
+
         }
+         for (var i = 0; i < this.elements.length; i++) {
+          
+        	console.log(i);
+        	this[i]=this.elements[i];
+        }
+         
+         
+       
+        return this;
     }
     DpQuery.prototype.inint.prototype = DpQuery.prototype;
     //原型  遍历元素
     DpQuery.prototype.each = function (fn) {
+    	 
         for (var i = 0; i < this.elements.length; i++) {
             fn(i, this.elements[i]);
         }
